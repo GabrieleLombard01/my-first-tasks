@@ -1,6 +1,24 @@
 .container{
-    border: dashed red 1px;
+    /* border: dashed red 1px; */
     margin: auto;
-    max-width: 1200px;
+    max-width: 1000px;
 }
-
+/* Heading : */
+.heading h1{
+    color: #00479c;
+}
+.heading button{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: solid #00479c 1px;
+    border-radius: 5px;
+    color: #00479c;
+    padding-bottom: 5px;
+}
+.heading button:hover{
+    background-color: #00479c;
+    color: beige;
+    border: solid beige 1px;
+}

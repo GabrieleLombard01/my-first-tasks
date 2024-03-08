@@ -1,11 +1,7 @@
-.row{
-    border: solid black 1px;
-    margin: 10px;
-    padding: 20px;
-}
+/*Layout:*/
 .col{
-    border: solid gray 1px;
-    height: 550px;
+    /* border: solid gray 1px; */
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +16,6 @@
     -webkit-box-shadow: 0px 0px 15px 5px #00479c; 
     box-shadow: 0px 0px 15px 5px #00479c;
     border-radius: 5px;
-
 }
 .name-section{
     padding: 5px;
