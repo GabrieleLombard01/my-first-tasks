@@ -1,0 +1,22 @@
+.container{
+    border: dashed red 1px;
+    margin: auto;
+    max-width: 1200px;
+}
+.row{
+    border: solid black 1px;
+    padding: 20px;
+}
+.col{
+    border: solid gray 1px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+.card{
+    width: 70%;
+    height: 80%;
+    background-color: blue;
+}
