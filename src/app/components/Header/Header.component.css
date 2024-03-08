@@ -1,9 +1,20 @@
+/*generals:*/
 header{
     width: 100%;
     height: 3rem;
     background-color: beige;
     z-index: 1;
 }
+
+/*utility:*/
+.shadow-bottom{
+    -webkit-box-shadow: 0px -5px 20px 13px #a8a8a8; 
+    box-shadow: 0px -5px 20px 13px #a8a8a8;
+    border-bottom: solid #00469c6f;
+}
+.dropdown-section.open {
+    display: block;
+  }
 
 /*logo:*/
 figure{
@@ -24,7 +35,12 @@ button i{
     width: 100%;
     height: 100px;
     background-color: beige;
-    -webkit-box-shadow: 0px -5px 20px 13px #a8a8a8; 
-    box-shadow: 0px -5px 20px 13px #a8a8a8;
-    border-bottom: solid #00469c6f;
+    display: none;
+}
+li a{
+    color: #00479c;
+}
+li a:hover{
+    text-decoration: underline;
+    font-weight: 500;
 }
