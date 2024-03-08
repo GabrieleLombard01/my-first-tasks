@@ -1,0 +1,18 @@
+<div class="row mx-auto flex flex-wrap flex-row items-center">
+
+  <div *ngFor="let dog of data" class="col mx-auto sm:mx-0 sm:w-6/12 lg:w-4/12">
+    <div class="card">
+      <div class="name-section">
+        <h1 class="font-extrabold">{{dog.razza}}</h1>
+      </div>
+      <figure class="p-1">
+        <img [src]="dog.immagine" alt="{{dog.razza}}">
+      </figure>
+      <div class="description-section">
+        <p>{{dog.descrizione}}</p>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>

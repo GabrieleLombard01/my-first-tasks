@@ -1,0 +1,43 @@
+.row{
+    border: solid black 1px;
+    margin: 10px;
+    padding: 20px;
+}
+.col{
+    border: solid gray 1px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+/*Card:*/
+.card{
+    width: 260px;
+    height: 440px;
+    background-color: beige;
+    border: solid #00479c 1px;
+    -webkit-box-shadow: 0px 0px 15px 5px #00479c; 
+    box-shadow: 0px 0px 15px 5px #00479c;
+    border-radius: 5px;
+
+}
+.name-section{
+    padding: 5px;
+    border-bottom: solid #00479c 2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+figure{
+    width: 100%;
+}
+figure img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.description-section{
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
