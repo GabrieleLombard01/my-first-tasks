@@ -1,15 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { DogCardComponent } from '../DogCard/DogCard.component';
+import { ModalComponent } from '../Modal/Modal.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-Gallery',
   templateUrl: './Gallery.component.html',
   styleUrls: ['./Gallery.component.css'],
   standalone: true,
-  imports: [DogCardComponent]
+  imports: [DogCardComponent, ModalComponent, CommonModule]
 })
 export class GalleryComponent implements OnInit {
 
+    // DATA:
   dogs = [
     {
         "id": 1,
@@ -132,6 +135,16 @@ export class GalleryComponent implements OnInit {
         "descrizione": "Il Bichon Frise è noto per il suo mantello riccio e la personalità vivace. È un cane socievole, affettuoso e ama giocare."
     },
 ]
+    // Logica per modale:
+    mostraModale = false;
+
+    apriModale() {
+    this.mostraModale = true;
+    }
+
+    chiudiModale() {
+    this.mostraModale = false;
+    }
 
   constructor() { }
 

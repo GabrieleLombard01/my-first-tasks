@@ -1,0 +1,29 @@
+<div class="modal">
+
+  <!--Heading :-->
+  <div class="flex justify-between items-center mb-2 py-1 px-1">
+    <h2 class="text-lg font-bold">Aggiungi...</h2>
+    <button (click)="chiudiModale.emit()"><i class="fa-regular fa-rectangle-xmark fa-xl"></i></button>
+  </div>
+
+  <div class="divider"></div>
+
+  <!--Form-->
+  <form class="p-2">
+
+    <label class="block" for="race">Razza:</label>
+    <input class="block" id="race" type="text">
+
+    <label class="block mt-2" for="text">Descrizione:</label>
+    <textarea class="block" id="text" ></textarea>
+
+    <label class="block mt-2 mb-1" for="img">Immagine:</label>
+    <input class="block" id="img" type="file">
+
+    <div class="flex justify-end items-center">
+      <button type="submit">Salva</button>
+    </div>
+
+  </form>
+
+</div>
