@@ -1,0 +1,20 @@
+footer{
+    margin-top: 50px;
+    background-color: beige;
+    width: 100%;
+    min-height: 100px;
+}
+footer a{
+    color: #00479c;
+}
+footer a:hover{
+    text-decoration: underline;
+    font-weight: 800;
+}
+footer h3{
+    color: #00479c;
+    font-size: 24px;
+}
+footer .container{
+    max-width: 500px;
+}
