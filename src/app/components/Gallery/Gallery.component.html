@@ -11,7 +11,7 @@
     </div>
 
     <!--Modale-->
-    <app-Modal *ngIf="mostraModale" (chiudiModale)="chiudiModale()"></app-Modal>
+    <app-Modal *ngIf="mostraModale" (chiudiModale)="chiudiModale()" (aggiungiCane)="aggiungiCane($event)"></app-Modal>
   
     <hr class="mt-3">
 

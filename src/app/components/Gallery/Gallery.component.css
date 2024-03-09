@@ -1,6 +1,7 @@
 /* Heading : */
 .heading h1{
     color: #00479c;
+    font-size: 25px;
 }
 .heading button{
     padding-left: 10px;

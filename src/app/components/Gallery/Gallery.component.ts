@@ -2,13 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { DogCardComponent } from '../DogCard/DogCard.component';
 import { ModalComponent } from '../Modal/Modal.component';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-Gallery',
   templateUrl: './Gallery.component.html',
   styleUrls: ['./Gallery.component.css'],
   standalone: true,
-  imports: [DogCardComponent, ModalComponent, CommonModule]
+  imports: [DogCardComponent, ModalComponent, CommonModule, FormsModule]
 })
 export class GalleryComponent implements OnInit {
 
@@ -145,6 +146,13 @@ export class GalleryComponent implements OnInit {
     chiudiModale() {
     this.mostraModale = false;
     }
+
+    aggiungiCane(nuovoCane: any) {
+        nuovoCane.id = this.dogs.length + 1; // Assegna un nuovo ID univoco
+        this.dogs.push(nuovoCane);
+      }
+      
+      
 
   constructor() { }
 
