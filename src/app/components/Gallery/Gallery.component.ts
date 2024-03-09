@@ -149,6 +149,7 @@ export class GalleryComponent implements OnInit {
 
     aggiungiCane(nuovoCane: any) {
         nuovoCane.id = this.dogs.length + 1; // Assegna un nuovo ID univoco
+        nuovoCane.immagine = URL.createObjectURL(nuovoCane.immagine);
         this.dogs.push(nuovoCane);
       }
       
